@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 *:last-child {
   margin-bottom: 0;
@@ -39,7 +40,8 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 figure {
@@ -91,8 +93,6 @@ h6 {
 }
 
 @media (min-width: 480px) {
-  
-
   .label {
     top: 50px;
   }
@@ -148,8 +148,12 @@ h6 {
   }
 
   .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
     color: rgb(0, 0, 0);
     opacity: 0.2;
     font-size: 10px;

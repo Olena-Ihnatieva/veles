@@ -4,6 +4,8 @@
   right: 0;
   color: #FF7931;
   opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
   transition: opacity 0.3s; 
   padding-top: 5px;
   padding-right: 6px;

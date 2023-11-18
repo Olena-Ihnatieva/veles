@@ -21,12 +21,19 @@
   left: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card-news .card-body {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 20px 15px;
 }
 
@@ -41,6 +48,8 @@
 }
 
 .card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -50,7 +59,11 @@
 
 .card-list-image {
   position: relative;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-filter 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-filter 0.3s;
+  -o-transition: transform 0.3s, filter 0.3s;
   transition: transform 0.3s, filter 0.3s;
+  transition: transform 0.3s, filter 0.3s, -webkit-transform 0.3s, -webkit-filter 0.3s;
 }
 
 .card-list-body {
@@ -63,6 +76,8 @@
   font-weight: 900;
   line-height: 19px;
   margin-bottom: 10px;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -73,7 +88,8 @@
 }
 
 .card:hover img {
-  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 .card:hover .icon-overlay {
@@ -94,6 +110,8 @@
 }
 
 .card .card-title {
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -103,7 +121,11 @@
 
 .card-background img {
   border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-filter 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-filter 0.3s;
+  -o-transition: transform 0.3s, filter 0.3s;
   transition: transform 0.3s, filter 0.3s;
+  transition: transform 0.3s, filter 0.3s, -webkit-transform 0.3s, -webkit-filter 0.3s;
 }
 
 .card-overviews:hover .card-background img {
@@ -111,9 +133,15 @@
 }
 
 .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-publicity .card-background > img {
@@ -149,8 +177,12 @@
 }
 
 .card-aside .card-body {
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 40px 0;
 }
 

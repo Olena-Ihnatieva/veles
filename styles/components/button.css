@@ -17,6 +17,8 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-transition: background 1s linear;
+  -o-transition: background 1s linear;
   transition: background 1s linear;
 }
 
@@ -51,7 +53,9 @@
   background-image: url(../../images/arrow.svg);
   right: 29px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .button-large {
