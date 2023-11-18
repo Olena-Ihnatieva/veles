@@ -1,0 +1,75 @@
+.button {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  border: 2px solid transparent;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: inherit;
+  padding: 16px 30px;
+  padding-right: 60px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: background 1s linear;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button-full {
+  width: 100%;
+}
+
+.button-primary {
+  color: #ffffff;
+  background-color: #000000B2;
+  border-color: #FF7931;
+}
+
+.button-primary:hover {
+  color: #ffffff;
+  background-color: #FF7931;
+}
+
+.button-primary::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 25px;
+  background-image: url(../../images/arrow.svg);
+  right: 29px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button-large {
+  padding: 16px 32px;
+}
+
+.button-small {
+  font-size: 10px;
+  padding: 9px 19px;
+}
+
+.button-secondary {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #FFF;
+}
+
+.button-secondary:hover {
+  color: #ffffff;
+  border-color: #FF7931;
+}

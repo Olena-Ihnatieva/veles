@@ -1,0 +1,22 @@
+.icon-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #FF7931;
+  opacity: 0;
+  transition: opacity 0.3s; 
+  padding-top: 5px;
+  padding-right: 6px;
+}
+
+.icon-size {
+  font-size: 20px;
+}
+
+.icon-orange {
+  color: #FF7931;
+}
+
+.icon-grey {
+  color: #696867;
+}

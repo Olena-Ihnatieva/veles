@@ -1,0 +1,183 @@
+.card {
+  position: relative;
+}
+
+/*.card-background {
+  position: absolute;
+  z-index: -1;
+} */
+
+.card-background > img {
+  height: 100%;
+} 
+
+.card-news .card-background > img {
+  min-height: 334px;
+} 
+
+.card-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-news .card-body {
+  justify-content: flex-end;
+  padding: 20px 15px;
+}
+
+.card-news .card-title {
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+
+.card-description {
+  margin: 0;
+}
+
+.card-list {
+  display: flex;
+}
+
+.card-list-img {
+  padding-right: 15px;
+}
+
+.card-list-image {
+  position: relative;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.card-list-body {
+  max-width: 146px;
+}
+
+.card-list-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 19px;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.card-list-description {
+  font-size: 10px;
+  line-height: 13px;
+  margin: 0;
+}
+
+.card:hover img {
+  filter: brightness(0.7);
+}
+
+.card:hover .icon-overlay {
+  opacity: 1;
+}
+
+.card-overviews .card-background > img {
+  min-height: 203px;
+}
+
+.card-overviews-body {
+  margin-top: 15px;
+}
+
+.card-overviews .card-title {
+  font-size: 23px;
+  line-height: 31px;
+}
+
+.card .card-title {
+  transition: color 0.3s;
+}
+
+.card:hover .title-hover {
+  color: #FF7931; 
+}
+
+.card-background img {
+  border: 1px solid transparent;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.card-overviews:hover .card-background img {
+  border: 1px solid #000000;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-publicity .card-background > img {
+  min-height: 176px;
+}
+
+.card-publicity .card-title {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 2px; 
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.card-advice .card-title {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 2px; 
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.card-advice-slide {
+  display: none;
+}
+
+.card-aside .card-background > img {
+  min-height: 310px;
+}
+
+.card-aside .card-body {
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.card-aside .card-title {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-title-white {
+  color: #ffffff;
+}
+
+.card-aside {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 960px) {
+  .card-advice-slide {
+    display: block;
+  }
+
+  .card-aside .card-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+*:last-child {
+  margin-bottom: 0;
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 640px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+figure {
+  margin: 0;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 16px 0;
+}
+
+* + p,
+* + ul,
+* + ol {
+  margin-top: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.67em 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 0.67em;
+}
+
+.label {
+  position: absolute;
+  top: 25px;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: rgb(255, 121, 49);
+  padding: 5px 15px;
+}
+
+@media (min-width: 480px) {
+  
+
+  .label {
+    top: 50px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 1206px;
+  }
+  
+  h4 {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 2px;
+  }
+  
+  h5 {
+    font-size: 28px;
+    line-height: 37.32px;
+    letter-spacing: 1px;
+    margin-bottom: 28px;
+  }
+  
+  .label {
+    top: 62px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    max-width: 1206px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    padding: 60px 0 50px;
+    text-align: center;
+  }
+
+  .header-title {
+    font-size: 35px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 46px;
+  }
+
+  hr {
+    color: rgba(0, 0, 0, 0.2);
+    opacity: 0.4;
+    margin: 46px 0px 8px;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: right;
+    color: rgb(0, 0, 0);
+    opacity: 0.2;
+    font-size: 10px;
+}
+}

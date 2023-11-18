@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Culture';
+  src:  url('../../fonts/Culture.eot?as0lqk');
+  src:  url('../../fonts/Culture.eot?as0lqk#iefix') format('embedded-opentype'),
+    url('../../fonts/Culture.ttf?as0lqk') format('truetype'),
+    url('../../fonts/Culture.woff?as0lqk') format('woff'),
+    url('../../fonts/Culture.svg?as0lqk#Culture') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Culture' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-views:before {
+  content: "\e902";
+}
+.icon-comment:before {
+  content: "\e900";
+}
+.icon-bookmark-o:before {
+  content: "\e901";
+}
