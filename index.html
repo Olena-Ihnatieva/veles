@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@300;500;600;700&display=swap"
-      rel="stylesheet"
-    >
-    <link rel="stylesheet" href="styles/main.css">
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@300;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/main.css">
   <title>Новини культури</title>
 </head>
 <body>
@@ -15,24 +19,104 @@
     <header class="header">
       <div class="container">
         <h2 class="header-title">Новини культури</h2>
-        <button class="nav-btn-open">
-          <img src="images/open_nav.svg" alt="open_nav">
-        </button>
-        <nav class="mobile_nav">
-          <button class="nav-btn-close">
-            <img src="images/close_nav.svg" alt="close_nav">
-          </button>
-        </nav>
-        <nav class="nav nav-header">
-          <a href="#!" class="nav-item">Новини</a>
-          <a href="#!" class="nav-item">Огляди</a>
-          <a href="#!" class="nav-item">Музика</a>
-          <a href="#!" class="nav-item">Архітектура</a>
-          <a href="#!" class="nav-item">Кіно</a>
-          <a href="#!" class="nav-item">Театр</a>
-          <a href="#!" class="nav-item">Література</a>
-          <a href="#!" class="nav-item">Релігія</a>
-          <a href="#!" class="nav-item">Живопис</a>
+        <nav class="navbar">
+          <ul class="navbar-nav">
+            <li>
+              <a href="#">
+                Новини
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Огляди
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Музика
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Архітектура
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Кіно
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Театр
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Література
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Релігія
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Живопис
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="navbar-toggle-position navbar-toggle is-active">
+            <span></span>
+          </a>
+          <ul class="navbar-nav-mobile">
+            <li>
+              <a href="#">
+                Новини
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Огляди
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Музика
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Архітектура
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Кіно
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Театр
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Література
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Релігія
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Живопис
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -356,5 +440,36 @@
       </section>
     </main>
   </div>
+
+
+  <div class="image-slider swiper mySwiper">
+    <div class="image-slider__wrapper swiper-wrapper">
+      <div class="imade-slider-slide swiper-slide">
+        <div class="image-slider__image">
+          <img src="images/banner.png" alt="">
+        </div>
+      </div>
+      <div class="imade-slider-slide swiper-slide">
+        <div class="image-slider__image">
+          <img src="images/banner.png" alt="">
+        </div>
+      </div>
+      <div class="imade-slider-slide swiper-slide">
+        <div class="image-slider__image">
+          <img src="images/banner.png" alt="">
+        </div>
+      </div>
+      <div class="imade-slider-slide swiper-slide">
+        <div class="image-slider__image">
+          <img src="images/banner.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
